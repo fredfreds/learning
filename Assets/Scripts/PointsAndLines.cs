@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 #region Serializable classes
 [System.Serializable]
@@ -23,23 +21,6 @@ public class Circle
 {
     public Point Center;
     public float Radius;
-}
-
-[System.Serializable]
-public class Vector
-{
-    public float x;
-    public float y;
-    public float z;
-
-    public Vector() { }
-
-    public Vector(float x, float y, float z)
-    {
-        this.x = x;
-        this.y = y;
-        this.z = z;
-    }
 }
 #endregion
 
