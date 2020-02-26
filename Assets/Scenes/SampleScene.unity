@@ -144,7 +144,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 506226269}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3, y: -1, z: 0}
+  m_LocalPosition: {x: 24, y: 7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -357,45 +357,46 @@ MonoBehaviour:
     x: 0
     y: 0
   TwoRed:
-    x: -1
-    y: 1
+    x: 24
+    y: 0
   ThreeBlue:
-    x: -3
-    y: -1
+    x: 24
+    y: 7
   FourYellow:
-    x: -3
-    y: -1
+    x: 24
+    y: 7
   IntersectPoint:
     x: NaN
     y: NaN
   MidPoint:
-    x: -0.5
-    y: 0.5
+    x: 12
+    y: 0
   P1: {fileID: 1921796063}
   P2: {fileID: 1935454996}
   P3: {fileID: 506226270}
   P4: {fileID: 1713237759}
   PointRadius: 0.1
-  Distance: 1.4142135
-  Slope1: -1
+  Distance: 24
+  Slope1: 0
   Slope2: NaN
-  PerpendicularSlope1: 1
+  PerpendicularSlope1: -Infinity
   PerpendicularSlope2: NaN
   ArePerpendicular: 0
   AreParallel: 0
   AreRightTriangle: 1
-  LA: 1.4142135
-  LB: 2.828427
-  LC: 3.1622777
-  Sin: 0.8944272
-  SinDegrees: 63.434944
-  Cos: 0.4472136
-  CosDegrees: 63.43495
-  Tan: 2
-  TanDegrees: 63.43495
-  Csc: 1.118034
-  Sec: 2.236068
-  Cot: 0.5
+  LA: 24
+  LB: 7
+  LC: 25
+  Sin: 0.28
+  SinDegrees: 16.260204
+  Cos: 0.96
+  CosDegrees: 16.26021
+  Tan: 0.29166666
+  TanDegrees: 16.260204
+  Csc: 3.5714285
+  Sec: 1.0416666
+  Cot: 3.4285715
+  AngleAtan: 90
   C1:
     Center:
       x: 50
@@ -445,7 +446,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1713237758}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3, y: -1, z: 0}
+  m_LocalPosition: {x: 24, y: 7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -505,7 +506,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1935454995}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1, y: 1, z: 0}
+  m_LocalPosition: {x: 24, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

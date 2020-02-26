@@ -140,6 +140,26 @@ public class Calculator
     }
     #endregion
 
+    #region Trigonometry
+
+    // Degrees to Radians, 0.01745...f
+    // (PI / 180)
+    // Radians to Degrees, 57.2957...f
+    // (180 / PI)
+
+    public float AngleAtan(Point a, Point b)
+    {
+        float r = Mathf.Atan((b.y - a.y) / (b.x - a.x)) * Mathf.Rad2Deg;
+        if (b.x < a.x && b.y > a.y)
+            return r + 180f;
+        else if (b.x < a.x && b.y < a.y)
+            return r + 180f;
+        else if (b.x > a.x && b.y < a.y)
+            return r + 360f;
+        else
+            return r;
+    }
+
     public float Sin(float opp, float hyp)
     {
         float r = opp / hyp;
@@ -193,6 +213,16 @@ public class Calculator
         float r = adj / opp;
         return r;
     }
+
+    //cos^2 A + sin^2 A = 1
+
+    // tan A = sin A / cos A
+    // sin (A1 + A2) = sin A1 cos A2 + cos A1 sin A2
+    // sin (A1 - A2) = sin A1 cos A2 - cos A1 sin A2
+
+    // cos (A1 + A2) = cos A1 cos A2 + sin A1 sin A2
+    // cos (A1 - A2) = cos A1 cos A2 - sin A1 sin A2
+    #endregion
 }
 
 public class PointsAndLines : MonoBehaviour
@@ -237,6 +267,7 @@ public class PointsAndLines : MonoBehaviour
     public float Csc;
     public float Sec;
     public float Cot;
+    public float AngleAtan;
 
     public Circle C1;
     public Circle C2;
@@ -322,6 +353,8 @@ public class PointsAndLines : MonoBehaviour
         SinDegrees = Calc.SinD(Sin);
         CosDegrees = Calc.CosD(Cos);
         TanDegrees = Calc.TanD(Tan);
+
+        AngleAtan = Calc.AngleAtan(TwoRed, ThreeBlue);
     }
     #endregion
 
