@@ -318,7 +318,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 755117921}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5, y: 3, z: 0}
+  m_LocalPosition: {x: 4, y: 9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -369,32 +369,55 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Point1: {fileID: 1991309527}
   Point2: {fileID: 755117922}
-  Mag: 20
-  Ang: 80
+  Mag: 3.14
+  Ang: 18.5
   ToCartesian:
-    x: 3.4729645
-    y: 19.696156
-  Mag2: 4.472136
-  Ang2: -63.43495
+    x: 17.866419
+    y: 5.9780197
+  Mag2: 2.828427
+  Ang2: -45
   ToCartesian2:
     x: 2
-    y: -4
+    y: -2
   Start:
     x: 0
     y: 0
   One:
     x: 2
-    y: -4
+    y: -2
   Two:
-    x: -5
-    y: 3
+    x: 4
+    y: 9
   Three:
-    x: -3
-    y: -1
+    x: 6
+    y: 7
   Four:
-    x: 7
-    y: -7
+    x: -2
+    y: -11
   AB: 1
+  Scalar: 6
+  Normalize:
+    x: 0.28
+    y: 0.96
+  NormalizeValue:
+    x: 7
+    y: 24
+  DotProduct: -10
+  InView: 0
+  AngleBetween: 248.9625
+  AngleBetween3: 90
+  One3:
+    x: 0
+    y: 1
+    z: 0
+  Two3:
+    x: 1
+    y: 0
+    z: 0
+  Cross:
+    x: 0
+    y: 0
+    z: -1
 --- !u!1 &1991309526
 GameObject:
   m_ObjectHideFlags: 0
@@ -419,7 +442,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1991309526}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: -4, z: 0}
+  m_LocalPosition: {x: 2, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
