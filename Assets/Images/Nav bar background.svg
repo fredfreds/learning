@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="445" height="146" viewBox="0 0 445 146">
+  <defs>
+    <filter id="Rectangle_202" x="0" y="0" width="445" height="146" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feFlood flood-color="#473f97" flood-opacity="0.039"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Nav_bar_background" data-name="Nav bar background" transform="translate(36 36)">
+    <g transform="matrix(1, 0, 0, 1, -36, -36)" filter="url(#Rectangle_202)">
+      <rect id="Rectangle_202-2" data-name="Rectangle 202" width="373" height="74" rx="37" transform="translate(36 36)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

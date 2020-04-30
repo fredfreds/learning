@@ -1,0 +1,15 @@
+<svg id="icon_minimize-2_copy" data-name="icon / minimize-2 copy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 25 25">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Mask" d="M10.1.312,1.771,4.479A3.07,3.07,0,0,0,0,7.292v9.9A3,3,0,0,0,1.667,19.9L10,24.063a3.321,3.321,0,0,0,2.813,0L21.146,19.9a2.924,2.924,0,0,0,1.77-2.708v-9.9a3.135,3.135,0,0,0-1.77-2.812L12.813.312A2.888,2.888,0,0,0,11.458,0,3.208,3.208,0,0,0,10.1.312Z" transform="translate(22.916 24.375) rotate(180)"/>
+    </clipPath>
+  </defs>
+  <g id="Group_232" data-name="Group 232" transform="translate(1.042 0.313)">
+    <path id="Mask-2" data-name="Mask" d="M10.1.312,1.771,4.479A3.07,3.07,0,0,0,0,7.292v9.9A3,3,0,0,0,1.667,19.9L10,24.063a3.321,3.321,0,0,0,2.813,0L21.146,19.9a2.924,2.924,0,0,0,1.77-2.708v-9.9a3.135,3.135,0,0,0-1.77-2.812L12.813.312A2.888,2.888,0,0,0,11.458,0,3.208,3.208,0,0,0,10.1.312Z" transform="translate(22.916 24.375) rotate(180)"/>
+    <g id="Mask_Group_232" data-name="Mask Group 232" clip-path="url(#clip-path)">
+      <g id="Icon_Color" data-name="Icon Color" transform="translate(-1.042 -0.313)">
+        <rect id="Shape" width="25" height="25" fill="#b5bbc9"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg id="icon_plus" data-name="icon / plus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Mask" d="M20,10a1.181,1.181,0,0,1-1.25,1.25h-7.5v7.5A1.181,1.181,0,0,1,10,20a1.181,1.181,0,0,1-1.25-1.25v-7.5H1.25A1.181,1.181,0,0,1,0,10,1.181,1.181,0,0,1,1.25,8.75h7.5V1.25A1.181,1.181,0,0,1,10,0a1.181,1.181,0,0,1,1.25,1.25v7.5h7.5A1.181,1.181,0,0,1,20,10Z"/>
+    </clipPath>
+  </defs>
+  <g id="Group_90" data-name="Group 90" transform="translate(5 5)">
+    <path id="Mask-2" data-name="Mask" d="M20,10a1.181,1.181,0,0,1-1.25,1.25h-7.5v7.5A1.181,1.181,0,0,1,10,20a1.181,1.181,0,0,1-1.25-1.25v-7.5H1.25A1.181,1.181,0,0,1,0,10,1.181,1.181,0,0,1,1.25,8.75h7.5V1.25A1.181,1.181,0,0,1,10,0a1.181,1.181,0,0,1,1.25,1.25v7.5h7.5A1.181,1.181,0,0,1,20,10Z"/>
+    <g id="Mask_Group_90" data-name="Mask Group 90" clip-path="url(#clip-path)">
+      <g id="Icon_Color" data-name="Icon Color" transform="translate(-5 -5)">
+        <rect id="Shape" width="30" height="30" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

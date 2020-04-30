@@ -1,0 +1,10 @@
+<svg id="icon_coin_Bitcoin" data-name="icon / coin / Bitcoin" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="34" viewBox="0 0 34 34">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="icon_neo" data-name="icon / neo" d="M11.377,33.974h0L0,28.6V6.455l11.377,5.382V33.974Zm17.371-5.688h0l-11.836-4.61V10.129L28.747,5.878V28.286ZM11.819,11.342h0L.544,5.926,17.219,0,28.44,5.382l-16.62,5.96Z" transform="translate(0 0)" fill="#0d1f3c"/>
+    </clipPath>
+  </defs>
+  <g id="Group_2" data-name="Group 2" transform="translate(2.833 0)">
+    <path id="icon_neo-2" data-name="icon / neo" d="M11.377,33.974h0L0,28.6V6.455l11.377,5.382V33.974Zm17.371-5.688h0l-11.836-4.61V10.129L28.747,5.878V28.286ZM11.819,11.342h0L.544,5.926,17.219,0,28.44,5.382l-16.62,5.96Z" transform="translate(0 0)" fill="#347af0"/>
+  </g>
+</svg>

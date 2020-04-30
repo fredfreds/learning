@@ -1,0 +1,10 @@
+<svg id="icon_coin_Bitcoin" data-name="icon / coin / Bitcoin" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="34" viewBox="0 0 34 34">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="icon_eth" data-name="icon / eth" d="M10.432,33.99,0,19.289l10.433,6.165,10.44-6.165-10.44,14.7Zm0-10.512L0,17.311,10.433,0,20.867,17.311Z" fill="#0d1f3c"/>
+    </clipPath>
+  </defs>
+  <g id="Group_1" data-name="Group 1" transform="translate(7.083 0)">
+    <path id="icon_eth-2" data-name="icon / eth" d="M10.432,33.99,0,19.289l10.433,6.165,10.44-6.165-10.44,14.7Zm0-10.512L0,17.311,10.433,0,20.867,17.311Z" fill="#347af0"/>
+  </g>
+</svg>

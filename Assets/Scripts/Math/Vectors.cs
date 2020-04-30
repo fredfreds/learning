@@ -200,7 +200,7 @@ public class VCalc
     #endregion
 }
 
-public class Vector : MonoBehaviour
+public class Vectors : MonoBehaviour
 {
     public VCalc Calc = new VCalc();
     public Transform Point1;
@@ -268,6 +268,8 @@ public class Vector : MonoBehaviour
         Gizmos.DrawLine(new Vector3(One3.x, One3.y, One3.z), new Vector3(0, 0, 0));
         Gizmos.color = Color.red;
         Gizmos.DrawLine(new Vector3(Two3.x, Two3.y, Two3.z), new Vector3(0, 0, 0));
+        Gizmos.color = Color.black;
+        Gizmos.DrawLine(new Vector3(Surface.x, Surface.y, Surface.z), new Vector3(0, 0, 0));
         Gizmos.color = Color.red;
         Gizmos.DrawLine(new Vector3(Cross.x, Cross.y, Cross.z), new Vector3(0, 0, 0));
         Gizmos.color = Color.blue;
