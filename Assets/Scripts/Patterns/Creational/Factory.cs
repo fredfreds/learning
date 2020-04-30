@@ -5,7 +5,7 @@ using System.Xml.Serialization;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Patterns 
+namespace Patterns.Factory
 {
 
     public interface IProduct
