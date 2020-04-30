@@ -72,6 +72,7 @@ namespace Patterns
         CreatorB
     }
 
+    // virtual constructor
     public class Factory : MonoBehaviour
     {
         public static List<IProduct> Products = new List<IProduct>();
