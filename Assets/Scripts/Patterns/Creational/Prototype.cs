@@ -26,7 +26,7 @@ namespace Patterns.Prototype
             this.y = e.y;
         }
 
-        public IPrototype Clone()
+        public virtual IPrototype Clone()
         {
             return new Enemy(this);
         }
@@ -50,10 +50,10 @@ namespace Patterns.Prototype
         public SimpleEnemy(SimpleEnemy s)
             : base(s.x, s.y)
         {
-            this.z = z;
+            this.z = s.z;
         }
 
-        public SimpleEnemy Clone()
+        public override IPrototype Clone()
         {
             return new SimpleEnemy(this);
         }
@@ -99,7 +99,7 @@ namespace Patterns.Prototype
             n = new SimpleEnemy(3, 1, 2);
             CloneInfoText4.text = n.ToString();
 
-            SimpleEnemy clone4 = n.Clone();
+            SimpleEnemy clone4 = (SimpleEnemy)n.Clone();
             CloneInfoText5.text = clone4.ToString();
         }
 
