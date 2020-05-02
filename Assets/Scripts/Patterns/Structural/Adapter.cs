@@ -95,6 +95,47 @@ namespace Patterns.Adapter
         }
     }
 
+    public class WorldThree
+    {
+        public int Temperature(int la, int lo)
+        {
+            if (la == 30 && lo == 30)
+            {
+                return 20;
+            }
+            else
+            {
+                if (la == 20 && lo == 20)
+                {
+                    return 10;
+                }
+                else
+                {
+                    return 5;
+                }
+            }
+        }
+
+        public int Wind(int la, int lo)
+        {
+            if (la == 30 && lo == 30)
+            {
+                return 25;
+            }
+            else
+            {
+                if (la == 20 && lo == 20)
+                {
+                    return 15;
+                }
+                else
+                {
+                    return 7;
+                }
+            }
+        }
+    }
+
     public class WorldTwoAdapter : IAtmosphereService
     {
         private int la;
@@ -142,7 +183,7 @@ namespace Patterns.Adapter
         public LevelType l = LevelType.LevelOne;
 
         IAtmosphereService w = new WorldOne();
-        IAtmosphereService w2;
+        IAtmosphereService w2 = new WorldTwoAdapter(new WorldTwo());
 
         private void OnEnable()
         {
@@ -153,7 +194,6 @@ namespace Patterns.Adapter
         {
             w.Location(l.ToString());
             InfoText.text = $"{w.Temperature()} + {w.Wind()} = {w.Temperature() + w.Wind()}";
-            w2 = new WorldTwoAdapter(new WorldTwo());
             w2.Location(l.ToString());
             Info2Text.text = $"{w2.Temperature()} + {w2.Wind()} = {w2.Temperature() + w2.Wind()}";
         }
