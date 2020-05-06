@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 namespace DesignPatterns.Decorator
-{
+{    
+    //---------------------------------------------VARIANT 1--------------------------
     public interface IFlyUnit
     {
         string Fly();
@@ -58,6 +59,39 @@ namespace DesignPatterns.Decorator
                 walkUnit.Speed = value;
             } }
     }
+
+    public class ComplexUnit // without interface
+    {
+        private FlyUnit flyUnit = new FlyUnit();
+        private WalkUnit walkUnit = new WalkUnit();
+        private int speed;
+
+        public string Fly()
+        {
+            return flyUnit.Fly();
+        }
+
+        public string Walk()
+        {
+            return walkUnit.Walk();
+        }
+
+        public string Perform()
+        {
+            return $"can {flyUnit.Fly()} and {walkUnit.Walk()}";
+        }
+
+        public int Speed
+        {
+            get { return speed; }
+            set
+            {
+                speed = flyUnit.Speed = walkUnit.Speed = value;
+            }
+        }
+    }
+
+    //---------------------------------------------VARIANT 2--------------------------
 
     public interface IProp
     {
@@ -123,8 +157,10 @@ namespace DesignPatterns.Decorator
         public Text Info4Text;
         public Text Info5Text;
         public Text Info6Text;
+        public Text Info7Text;
 
         SimpleUnit u = new SimpleUnit();
+        ComplexUnit c = new ComplexUnit();
         IProp s;
         IProp s2;
         IProp s3;
@@ -148,6 +184,8 @@ namespace DesignPatterns.Decorator
             Info5Text.text = s3.GetPosition();
             s4 = new ComplexColorProp(s, true);
             Info6Text.text = s4.GetPosition();
+            c.Speed = 5;
+            Info7Text.text = c.Perform();
         }
 
         private void OnDisable()
