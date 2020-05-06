@@ -33,6 +33,11 @@ namespace DesignPatterns.Adapter
         }
 
         public int Health => unit.Health;
+
+        public int GetNewHealth()
+        {
+            return unit.Health * 10 / 100;
+        }
     }
 
     public class Adapter : MonoBehaviour
@@ -55,7 +60,8 @@ namespace DesignPatterns.Adapter
             u.Health = 100;
 
             a = new UnitToIUnitAdapter(u);
-            InfoText.text = u.Health.ToString() + "/" + a.GetHealth().ToString(); 
+            InfoText.text = u.Health.ToString() + "/" + a.GetHealth().ToString()
+                + "/" + a.GetNewHealth().ToString(); 
         }
 
         private void OnDisable()
