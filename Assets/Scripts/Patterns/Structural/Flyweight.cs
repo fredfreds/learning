@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Patterns.Composite
+namespace Patterns.Flyweight
 {
     public class Enemy
     {

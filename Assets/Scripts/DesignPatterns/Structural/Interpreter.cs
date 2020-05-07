@@ -25,11 +25,11 @@ namespace DesignPatterns.Interpreter
         {
             int cur = 0;
             Operation op = Operation.Nothing;
-            string[] parts = Regex.Split(s, @"(?<=[+-])");
+            string[] parts = Regex.Split(s, @"(?<=[+])");
 
             foreach (var item in parts)
             {
-                string[] ns = item.Split(new[] { "+", "-" }, System.StringSplitOptions.RemoveEmptyEntries);
+                string[] ns = item.Split(new[] { "+" }, System.StringSplitOptions.RemoveEmptyEntries);
                 string f = ns[0];
                 int v, z;
 
