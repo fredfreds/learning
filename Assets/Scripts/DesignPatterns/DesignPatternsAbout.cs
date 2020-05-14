@@ -110,12 +110,12 @@ namespace DesignPatterns.DesignPatternsAbout
         //-------------------------------------------------------
         // 8(20). State:
         // - state machine
-        // - 
+        // - have a single state
         // - https://github.com/fredfreds/learning/blob/master/Assets/Scripts/DesignPatterns/Behavioral/State.cs
         //-------------------------------------------------------
         // 9(21). Strategy:
         // - composition (interfaces)
-        // - 
+        // - dont have a single state, different behaviours are represent using different objects
         // - https://github.com/fredfreds/learning/blob/master/Assets/Scripts/DesignPatterns/Behavioral/Strategy.cs
         //-------------------------------------------------------
         // 10(22). Template:
