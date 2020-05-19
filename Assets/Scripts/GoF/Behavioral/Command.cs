@@ -275,6 +275,26 @@ namespace GoF.Command
         }
     }
 
+    public class SetBoldTextCommand : AbstractUndoCommand
+    {
+        private string text;
+
+        public SetBoldTextCommand(string text, VideoEditor editor, EditorHistory history) : base(editor, history)
+        {
+            this.text = $"<b>{text}</b>";
+        }
+
+        protected override void DoExecute()
+        {
+            editor.Text = text;
+        }
+
+        public override void Unexecute()
+        {
+            editor.RemoveText();
+        }
+    }
+
     public class UndoEditorCommand : IEditorCommand
     {
         private EditorHistory history;
@@ -346,7 +366,7 @@ namespace GoF.Command
         VideoEditor editor = new VideoEditor();
         EditorHistory history = new EditorHistory();
         SetContrastCommand u1;
-        SetTextCommand u2;
+        SetBoldTextCommand u2;
         UndoEditorCommand u3;
 
         private void OnEnable()
@@ -394,7 +414,7 @@ namespace GoF.Command
 
         private void Build2()
         {
-            u2 = new SetTextCommand(Text, editor, history);
+            u2 = new SetBoldTextCommand(Text, editor, history);
             u2.Execute();
             Info6Text.text = editor.ToString();
             HS = history.HistorySize();
