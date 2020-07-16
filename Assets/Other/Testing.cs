@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
 namespace Testing
@@ -114,6 +115,19 @@ namespace Testing
 
             St st = new St();
             St st2 = new St();
+
+            List<string> tl = new List<string> { "a", "b", "c" };
+
+            Parallel.ForEach(tl, m => Debug.Log(tl.IndexOf(m)));
+
+            tl.RemoveAll(x => x != "a");
+
+            Debug.Log(tl.Count);
+
+            foreach (var item in tl)
+            {
+                Debug.Log(item);
+            }
         }
     }
 }
