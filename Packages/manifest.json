@@ -2,9 +2,11 @@
   "dependencies": {
     "com.unity.adaptiveperformance": "1.1.0",
     "com.unity.device-simulator": "2.2.2-preview",
+    "com.unity.entities": "0.10.0-preview.6",
     "com.unity.ext.nunit": "1.0.0",
     "com.unity.ide.rider": "2.0.2",
     "com.unity.ide.vscode": "1.2.0",
+    "com.unity.localization": "0.6.1-preview",
     "com.unity.test-framework": "1.1.13",
     "com.unity.textmeshpro": "3.0.0-preview.1",
     "com.unity.timeline": "1.2.6",
@@ -40,7 +42,6 @@
     "com.unity.modules.video": "1.0.0",
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
-    "com.unity.modules.xr": "1.0.0",
-    "com.unity.localization": "0.6.1-preview"
+    "com.unity.modules.xr": "1.0.0"
   }
 }
